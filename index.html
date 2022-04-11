@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Memory Game</title>
+</head>
+<body>
+    <!-- Fruit icons are from www.flaticon.com and stockio.com -->
+    <nav>
+        <div id="logo">
+            <h1 id="logo_text">Memory<span style="color: rgb(53, 164, 255);">Game</span></h1>
+        </div>
+        <div id="game_settings">
+            <div id="input_number_style">
+                <div id="input_number_decrease">
+                    <span style="font-size: 4vh;">-</span>
+                </div>
+                <input id="input_number" type="number" value="3" min="3" max="9" disabled="true">
+                <div id="input_number_increase">
+                    <span style="font-size: 3vh;">+</span>
+                </div>
+                <input id="input_button" type="button" value="Start!" onclick="StartGame()">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="game"></div>
+    </main>
+    <footer id="footer">
+        <div id="copyright">
+            <p id="copyright_text">&copy;2022 | Game made by Oskar Bujak</p>
+        </div>
+    </footer>
+    <script src="./inputnumber.js" type="text/javascript"></script>
+    <script src="./game.js" type="text/javascript"></script>
+</body>
+</html>

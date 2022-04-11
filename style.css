@@ -1,0 +1,191 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav {
+  background-color: #e2e2e2;
+  height: 8vh;
+  line-height: 8vh;
+}
+
+nav #logo {
+  float: left;
+  margin-left: 1vw;
+}
+
+nav #logo #logo_text {
+  margin: auto;
+  font-size: 3.5vh;
+}
+
+nav #game_settings {
+  line-height: 8vh;
+  float: right;
+  margin-right: 1vw;
+  margin-top: 1.5vh;
+}
+
+nav #game_settings #input_number::-webkit-outer-spin-button, nav #game_settings #input_number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+nav #game_settings #input_number[type=number] {
+  -moz-appearance: textfield;
+}
+
+nav #game_settings #input_number {
+  border: none;
+  text-align: center;
+  font-size: larger;
+}
+
+nav #game_settings #input_number:disabled {
+  background-color: white;
+}
+
+nav #game_settings #input_number_style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #35a4ff;
+}
+
+nav #game_settings #input_number_decrease, nav #game_settings #input_number, nav #game_settings #input_number_increase {
+  height: 4vh;
+  line-height: 4vh;
+  float: left;
+}
+
+nav #game_settings #input_number_increase, nav #game_settings #input_number_decrease {
+  background-color: white;
+  padding-bottom: 2px;
+}
+
+nav #game_settings #input_number_increase span, nav #game_settings #input_number_decrease span {
+  height: 4vh;
+  padding: 10px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+nav #game_settings #input_number_increase span:hover, nav #game_settings #input_number_decrease span:hover {
+  cursor: pointer;
+}
+
+nav #game_settings #input_number_increase {
+  border-right: solid 1px black;
+}
+
+nav #game_settings #input_number_decrease {
+  border-radius: 10px 0 0 10px;
+}
+
+nav #game_settings #input_button {
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: white;
+  padding: 0 20px 0 20px;
+  font-weight: bold;
+  font-size: large;
+}
+
+nav #game_settings #input_button:hover {
+  cursor: pointer;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+  clear: both;
+}
+
+main .WinScreen {
+  font-size: 5vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .Card {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 2vw;
+  border: 2px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+main .CardFlipped {
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .CardNotFlipped {
+  background: #3554ff;
+  background: linear-gradient(24deg, #3554ff 0%, #35a4ff 50%, #35dcff 100%);
+}
+
+main #game {
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  background-color: #e2e2e2;
+  margin-top: auto;
+}
+
+footer #copyright {
+  padding: 0.5vh;
+}
+
+footer #copyright #copyright_text {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
